@@ -21,7 +21,7 @@
 
 - SPA uygulamaları için React-Router-Dom teknolojisini kullandım
 
-- Bu proje Hamburger Restoranı projesidir
+  
 
 
 
