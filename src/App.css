@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;500;600;700;800;900&family=Anton&family=Gugi&family=Lato:wght@100;300;400;700;900&family=Maven+Pro:wght@400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Sofia&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:'Poppins',serif;
+}
+img{
+  width: 100px;
+  height: 100px;
+
+}
+
+/* Navbar */
+.Navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 80px;
+  background-color:black ;
+
+
+}
+.rightside{
+  display: flex;
+  gap: 20px;
+ 
+}
+.rightside a{
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: orange;
+  padding: 8px 10px;
+  border-radius:15px;
+  transition: .5s;
+  position: relative;
+  font-weight: 800;
+
+
+
+
+}
+
+.rightside a:hover{
+  width: 100%;
+  color:black;
+
+
+}
+
+@media (max-width:600px){
+  .leftside img{
+    width: 50px;
+    height: 50px;
+    margin-left: 16px;
+
+  }
+  .rightside a{
+    margin-right: 4px;
+  }
+  .Navbar{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 15px 5px;
+  }
+}
+
+@media (max-width:768px){
+  .leftside img{
+    width: 100px;
+    height: 100px;
+    margin-left: 16px;
+
+  }
+  .rightside a{
+    margin-right: 4px;
+    font-size: 13px;
+  }
+  .Navbar{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 15px 5px;
+  }
+}
+/* Navbar bitiş */
+/* Home Css başlangıç */
+.Home{
+  width:100%;
+  height: 130vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Header-Container{
+  width: auto;
+  margin-left: 50px;
+  margin-top: -150px;
+
+}
+.Header-Container h1{
+  font-size:90px;
+  height: 60px;
+  font-weight: 200;
+  color:orange;
+}
+.Header-Container h1 span{
+  color: black;
+
+}
+.Header-Container p{
+  font-size: 20px;
+  color:lime;
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+.Header-Container button{
+  width: 200px;
+  height: 100px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 500px;
+  font-size:20px;
+  font-weight: 600;
+  color: orange;
+  position: relative;
+  z-index: 2;
+}
+
+.Header-Container button:hover{
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+  
+   
+
+@media (max-width:768px) {
+  .Home{
+    justify-content: center;
+    align-items: center;
+  }
+  .Header-Container p{
+    font-size: 20px;
+    color:lime;
+    margin-top: 250px;
+    margin-bottom: 15px;
+  }
+
+  .Header-Container h1 span{
+    color:orange;
+  
+  }
+
+  .Header-Container h1{
+    font-size: 100px;
+    height: 30px;
+    color: black;
+  }
+ 
+  .Header-Container button{
+    width: 180px;
+    height: 100px;
+    margin-top: 80px;
+    background-color:rgb(0, 0, 0);
+    color: rgb(227, 177, 16);
+
+  }
+}
+
+/* Home Css bitiş */
+
+/* Footer başlangıç */
+.Medya p{
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 20px;
+
+}
+/* Footer Bitiş */
+/* Menu Basşlangıç */
+.Menu{
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+background-color: orange;
+  width: 100%;
+  height: 140vh;
+  
+
+}
+.MenuTitle{
+ font-size: 35px;
+ margin-bottom: 20px;
+
+}
+.MenuList{
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  text-align: center;
+  justify-content:center;
+  gap: 15px;
+  margin-top:-10px;
+
+
+}
+.menuItem{
+  background-color: black;
+  width: 350px;
+  height: 350px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  
+  
+}
+.menuItem:hover{
+  transform: scale(1.03);
+  opacity: .9;
+}
+.menuItem img{
+  width: 340px;
+  height: 250px;
+
+}
+.menuItem p{
+  color:orange;
+
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.menuItem h3{
+  color: orange;
+  letter-spacing: 1px;
+}
+@media (max-width:768px){
+  .Menu{
+    padding: 2px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .menuItem{
+    display: flex;
+    width: 150px;
+    height: 250px;
+    width:220px;
+  }
+  .menuItem img{
+    width:220px;
+    height: 130px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Menu Bİtişi */
+
+
+
+/* About Başlangıç */
+.About{
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  background-color: orange;
+
+}
+.AboutTop{
+  width: 100%;
+  height:90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.AboutBottom{
+  background-color: orange;
+  display: flex;
+  height: 28%;
+  flex-direction: column;
+  align-items: center;
+  margin-top:30px;
+  align-items: center;
+  text-align: center;
+}
+.AboutBottom p{
+
+  width: 500px;
+}
+.About .AboutBottom h1{
+  font-weight: 400;
+  font-size: 50px;
+  color:black;
+  display: flex;
+  justify-content: center;
+  transform:translateY(-30px);
+}
+
+
+
+/* About Bitiş */
+
+/* Contact Baslangıç */
+.Contact{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+}
+.Contact .leftSide{
+  height: 100%;
+  flex: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.Contact .rightSide{
+display: flex;
+flex-direction: column;
+flex: 50%;
+justify-content: center;
+}
+.Contact .rightSide h1{
+  font-weight:200;
+  font-size: 50px;
+  margin-left: 30px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  padding: 30px;
+}
+form input{
+  height: 40px;
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid orangered;
+  color:orange;
+
+}
+form textarea{
+  margin-top: 15px;
+  height: 70px;
+  width:80%;
+  border: none;
+  border-bottom: 1px solid orangered;
+ 
+}
+ input::placeholder,
+ textarea::placeholder{
+  color: rgb(124, 118, 115);
+ }
+
+ form input:focus,
+ textarea:focus{
+  outline: none;
+ }
+ form label{
+  margin-top: 15px;
+  color:black;
+ }
+ form button{
+  margin-top: 40px;
+  width: 140px;
+  height: 40px;
+  border: none;
+  background-color: black;
+  color: orange;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 15px;
+ }
+
+
+
+/* Contact Bitii*/
+
+
+
+
+
+
+
